@@ -1,0 +1,35 @@
+{
+  "product": "Infinity QRIS Voice",
+  "package_name": "com.infinity.qrisvoice",
+  "version_name": "1.0.1-beta",
+  "version_code": 3,
+  "status": "release-candidate",
+  "distribution": "telegram_community_gate",
+  "official_landing": "https://infinityai.id/qris-voice/",
+  "official_telegram_bot": "https://t.me/InfinityDigitalStoreBot?start=dl_qris",
+  "official_community": "https://t.me/+W6H55z8tjwY0Njc1",
+  "apk_filename": "InfinityQRISVoice-v1.0.1-beta.apk",
+  "apk_sha256": "e4b733b8c92a8096dd21bc74d2c44b0d372c5586d5d0bd9418f3530009b5c899",
+  "signer_certificate_sha256": "19a021c195943d5b82bf466aa7e4a5c02c4bbf72a9070eba87e9a1c6a3d9b0d4",
+  "signer_dn": "CN=Infinity AI, OU=Infinity Team, O=Infinity Digital, L=Jakarta, ST=DKI, C=ID",
+  "min_sdk": 28,
+  "target_sdk": 34,
+  "apk_size_bytes": 10498632,
+  "release_date": "2026-10-27",
+  "verified_provider": [
+    "DANA Bisnis"
+  ],
+  "preset_smart_learn": [
+    "ShopeePay Merchant",
+    "GoPay Merchant",
+    "SeaBank",
+    "BCA mobile / myBCA"
+  ],
+  "notes": [
+    "Self-healing NotificationListenerService with retry and recovery after reboot/update.",
+    "Fixes stale-listener race that could show a false disconnected state.",
+    "Adds Xiaomi/Redmi/POCO Auto-start review after install/update.",
+    "Recovers recent active-payment notifications after a short listener gap without duplicate announcements.",
+    "Distribution is gated by verified membership in the official Infinity Base Telegram community."
+  ]
+}
