@@ -74,10 +74,10 @@ Recommended flow:
 1. User opens QRIS Voice page.
 2. User presses **Gabung Komunitas & Unduh Gratis**.
 3. Website opens the official bot with a QRIS Voice deep-link payload.
-4. Bot shows the official group invite and a **Saya Sudah Bergabung** button.
-5. Bot checks Telegram membership.
-6. Only verified members receive the exact release APK from the official bot.
-7. Before delivery, the bot checks the APK SHA-256 against the published release record.
+4. Bot stores the pending QRIS Voice request and shows the official Infinity Base join button.
+5. After Telegram confirms the user joined through a `chat_member` update, the bot automatically delivers the exact release APK; no second button or screenshot is required.
+6. If the user is already a verified member, delivery happens immediately after the bot deep link opens.
+7. Before delivery, the bot checks the APK SHA-256 against the published release record. A manual **Cek Sekarang** action remains only as fallback if a Telegram join event is delayed.
 8. App operation itself remains offline-first and does not require continuous Telegram membership.
 
 ## Public release record
