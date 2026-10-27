@@ -3,7 +3,7 @@
   "package_name": "com.infinity.qrisvoice",
   "version_name": "1.0.1-beta",
   "version_code": 3,
-  "status": "release-candidate",
+  "status": "public",
   "distribution": "telegram_community_gate",
   "official_landing": "https://infinityai.id/qris-voice/",
   "official_telegram_bot": "https://t.me/InfinityDigitalStoreBot?start=dl_qris",
@@ -34,12 +34,18 @@
   ],
   "website_live": true,
   "delivery": "official_telegram_bot_auto_delivery_after_verified_join",
-  "delivery_ready": false,
-  "delivery_blocker": "One-time owner bootstrap remains: @InfinityDigitalStoreBot must be an administrator in the official Infinity Base group and its internal Telegram chat ID must be registered. Until then the gate fails closed.",
+  "delivery_ready": true,
+  "delivery_blocker": null,
   "artifact_integrity_check": "bot_recalculates_sha256_and_blocks_on_mismatch",
   "delivery_ux": {
     "existing_member": "immediate_delivery_after_official_bot_deep_link",
     "new_member": "join_infinity_base_once_then_automatic_apk_delivery",
     "fallback": "manual_check_button_only_if_telegram_join_event_is_delayed"
+  },
+  "community_registered": true,
+  "real_owner_delivery_test": {
+    "result": "passed",
+    "tested_at": "2026-10-28",
+    "note": "Existing verified Infinity Base member received the official APK through the production bot flow."
   }
 }
