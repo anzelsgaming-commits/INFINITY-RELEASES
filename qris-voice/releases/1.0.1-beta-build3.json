@@ -33,8 +33,13 @@
     "Distribution is gated by verified membership in the official Infinity Base Telegram community."
   ],
   "website_live": true,
-  "delivery": "official_telegram_bot_direct_after_membership_and_sha256_verification",
+  "delivery": "official_telegram_bot_auto_delivery_after_verified_join",
   "delivery_ready": false,
-  "delivery_blocker": "Infinity Base internal Telegram chat ID has not yet been registered with the bot; gate fails closed until owner runs /registergroup inside the official group.",
-  "artifact_integrity_check": "bot_recalculates_sha256_and_blocks_on_mismatch"
+  "delivery_blocker": "One-time owner bootstrap remains: @InfinityDigitalStoreBot must be an administrator in the official Infinity Base group and its internal Telegram chat ID must be registered. Until then the gate fails closed.",
+  "artifact_integrity_check": "bot_recalculates_sha256_and_blocks_on_mismatch",
+  "delivery_ux": {
+    "existing_member": "immediate_delivery_after_official_bot_deep_link",
+    "new_member": "join_infinity_base_once_then_automatic_apk_delivery",
+    "fallback": "manual_check_button_only_if_telegram_join_event_is_delayed"
+  }
 }
