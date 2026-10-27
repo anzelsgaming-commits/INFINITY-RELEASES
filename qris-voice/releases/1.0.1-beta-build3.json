@@ -31,5 +31,10 @@
     "Adds Xiaomi/Redmi/POCO Auto-start review after install/update.",
     "Recovers recent active-payment notifications after a short listener gap without duplicate announcements.",
     "Distribution is gated by verified membership in the official Infinity Base Telegram community."
-  ]
+  ],
+  "website_live": true,
+  "delivery": "official_telegram_bot_direct_after_membership_and_sha256_verification",
+  "delivery_ready": false,
+  "delivery_blocker": "Infinity Base internal Telegram chat ID has not yet been registered with the bot; gate fails closed until owner runs /registergroup inside the official group.",
+  "artifact_integrity_check": "bot_recalculates_sha256_and_blocks_on_mismatch"
 }
