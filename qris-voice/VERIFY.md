@@ -68,7 +68,12 @@ Then calculate the file SHA-256 and compare it with the matching release record 
 
 ## Distribution policy
 
-- The website and Telegram bot may act as access gates, but the APK itself should originate from the official Infinity domain.
+- The official website is the public discovery, privacy, installation, and verification source.
+- QRIS Voice download/update access is routed to the official Telegram bot `@InfinityDigitalStoreBot`.
+- The bot verifies Infinity Base membership with Telegram before delivery and fails closed if the community is not registered or Telegram verification fails.
+- Before sending build 3, the bot recalculates the release APK SHA-256 and blocks delivery if it differs from the published release hash.
+- The official bot may deliver the exact signed APK directly after successful membership and integrity verification.
+- Permanent public APK URLs are not the supported distribution path; old/direct APK routes are redirected to the community gate.
 - Do not trust APK files forwarded by unknown Telegram accounts, mirrors or file-sharing sites.
 - A release page must publish the version, build number, APK SHA-256 and signing-certificate fingerprint.
 - A release must never silently change binary content while keeping the same published hash.
