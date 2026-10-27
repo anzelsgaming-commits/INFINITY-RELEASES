@@ -14,12 +14,15 @@ This page is the public verification record for **Infinity QRIS Voice** distribu
 
 The **signing certificate fingerprint is the primary identity check** for APK updates. A file with a different signing certificate must not be treated as an official Infinity QRIS Voice update.
 
-## Current public release
+## Current release candidate
 
-See:
-- [1.0.0-beta / build 2 release record](releases/1.0.0-beta-build2.json)
+The current signed release candidate is:
+- [1.0.1-beta / build 3 release record](releases/1.0.1-beta-build3.json)
 
-Infinity is preparing a newer reliability release. Until its release record is published here, do not treat a differently hashed APK as a public release even if its filename looks similar.
+Previous public binary record:
+- [1.0.0-beta / build 2](releases/1.0.0-beta-build2.json)
+
+Build 3 becomes the public website release only after the website, Telegram gate, version manifest, and download controls are verified live.
 
 ## What the app needs
 
