@@ -70,7 +70,9 @@ Then calculate the file SHA-256 and compare it with the matching release record 
 
 - The official website is the public discovery, privacy, installation, and verification source.
 - QRIS Voice download/update access is routed to the official Telegram bot `@InfinityDigitalStoreBot`.
-- The bot verifies Infinity Base membership with Telegram before delivery and fails closed if the community is not registered or Telegram verification fails.
+- The bot records the requested download, then listens for Telegram `chat_member` updates from the registered Infinity Base group. A successful join triggers automatic delivery; no screenshot or second verification step is required in the normal flow.
+- Existing members receive the file immediately after opening the official QRIS Voice bot deep link.
+- Membership verification still fails closed if the community is not registered or Telegram verification fails.
 - Before sending build 3, the bot recalculates the release APK SHA-256 and blocks delivery if it differs from the published release hash.
 - The official bot may deliver the exact signed APK directly after successful membership and integrity verification.
 - Permanent public APK URLs are not the supported distribution path; old/direct APK routes are redirected to the community gate.
