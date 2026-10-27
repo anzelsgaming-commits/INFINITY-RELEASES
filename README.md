@@ -7,7 +7,7 @@ Public binary release and update feed for Infinity customers. Source code is not
 Public trust and integrity records:
 
 - qris-voice/VERIFY.md
-- qris-voice/releases/1.0.1-beta-build3.json (current release candidate)
+- qris-voice/releases/1.0.1-beta-build3.json (current public release)
 - qris-voice/releases/1.0.0-beta-build2.json (previous public binary)
 - SECURITY.md
 
