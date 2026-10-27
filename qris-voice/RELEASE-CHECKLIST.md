@@ -53,12 +53,12 @@ Do not advertise Mandiri, OVO, or another provider as supported until its parser
 
 ## Distribution
 
-- [ ] Official website serves the exact APK whose SHA-256 is published.
 - [ ] Direct old/stale APK URLs are removed or redirected.
 - [ ] Website download is gated through the official Telegram bot if community membership is required.
-- [ ] Telegram bot checks group membership before creating a download grant.
-- [ ] APK bytes still originate from the official Infinity domain.
-- [ ] Download grants are short-lived; a permanent public APK URL is not exposed as the primary call-to-action.
+- [ ] Telegram bot verifies group membership with Telegram before delivery.
+- [ ] Telegram bot verifies the release APK SHA-256 immediately before delivery and fails closed on mismatch.
+- [ ] The exact signed APK is delivered only by the official bot after membership + integrity verification.
+- [ ] A permanent public APK URL is not exposed as the supported download path.
 - [ ] Website shows version, Android requirement, APK SHA-256, and signer fingerprint.
 - [ ] Privacy policy and installation guide are linked beside the download action.
 
@@ -76,8 +76,8 @@ Recommended flow:
 3. Website opens the official bot with a QRIS Voice deep-link payload.
 4. Bot shows the official group invite and a **Saya Sudah Bergabung** button.
 5. Bot checks Telegram membership.
-6. Only verified members receive a short-lived signed download link.
-7. The link resolves to the official Infinity domain.
+6. Only verified members receive the exact release APK from the official bot.
+7. Before delivery, the bot checks the APK SHA-256 against the published release record.
 8. App operation itself remains offline-first and does not require continuous Telegram membership.
 
 ## Public release record
