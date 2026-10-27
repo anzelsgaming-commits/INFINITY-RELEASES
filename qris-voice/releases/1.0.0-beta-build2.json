@@ -1,0 +1,19 @@
+{
+  "product": "Infinity QRIS Voice",
+  "package_name": "com.infinity.qrisvoice",
+  "version_name": "1.0.0-beta",
+  "version_code": 2,
+  "status": "public",
+  "apk_filename": "infinity-qris-voice-v1.0.0-beta.apk",
+  "official_landing": "https://infinityai.id/qris-voice/",
+  "apk_sha256": "9693755224E697017E012F0EE3CDDEF621FD2026F362B41C66E8B496F9A0C314",
+  "signer_certificate_sha256": "19a021c195943d5b82bf466aa7e4a5c02c4bbf72a9070eba87e9a1c6a3d9b0d4",
+  "signer_dn": "CN=Infinity AI, OU=Infinity Team, O=Infinity Digital, L=Jakarta, ST=DKI, C=ID",
+  "min_sdk": 28,
+  "target_sdk": 34,
+  "published_apk_size_bytes": 10430320,
+  "notes": [
+    "This record describes the APK publicly served from infinityai.id when verified on 2026-10-27.",
+    "A newer self-healing build exists in development and must receive a new versionCode before public release."
+  ]
+}
